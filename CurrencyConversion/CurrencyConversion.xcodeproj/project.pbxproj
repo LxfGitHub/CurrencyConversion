@@ -15,6 +15,11 @@
 		ACD368A422FE673100E9055B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD368A222FE673100E9055B /* LaunchScreen.storyboard */; };
 		ACD368AF22FE673100E9055B /* CurrencyConversionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD368AE22FE673100E9055B /* CurrencyConversionTests.swift */; };
 		ACD368BA22FE673100E9055B /* CurrencyConversionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD368B922FE673100E9055B /* CurrencyConversionUITests.swift */; };
+		ACE27F5622FE98810007BCDA /* InputCurrencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE27F5522FE98810007BCDA /* InputCurrencyView.swift */; };
+		ACE27F5C22FEA4F00007BCDA /* InputCurrencyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACE27F5B22FEA4F00007BCDA /* InputCurrencyView.xib */; };
+		ACE27F5F22FED74F0007BCDA /* RateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE27F5D22FED74F0007BCDA /* RateCollectionViewCell.swift */; };
+		ACE27F6022FED74F0007BCDA /* RateCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACE27F5E22FED74F0007BCDA /* RateCollectionViewCell.xib */; };
+		ACE27F622301880B0007BCDA /* CurrencyListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE27F612301880A0007BCDA /* CurrencyListModel.swift */; };
 		BDE37D2F53A49E56B0EF827B /* Pods_CurrencyConversion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D776556AB30DE798848296 /* Pods_CurrencyConversion.framework */; };
 		C67D60F841FD71321896A478 /* Pods_CurrencyConversionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F2FACE89F4A4A9F016D116 /* Pods_CurrencyConversionTests.framework */; };
 /* End PBXBuildFile section */
@@ -52,6 +57,11 @@
 		ACD368B522FE673100E9055B /* CurrencyConversionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurrencyConversionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD368B922FE673100E9055B /* CurrencyConversionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConversionUITests.swift; sourceTree = "<group>"; };
 		ACD368BB22FE673100E9055B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACE27F5522FE98810007BCDA /* InputCurrencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputCurrencyView.swift; sourceTree = "<group>"; };
+		ACE27F5B22FEA4F00007BCDA /* InputCurrencyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputCurrencyView.xib; sourceTree = "<group>"; };
+		ACE27F5D22FED74F0007BCDA /* RateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateCollectionViewCell.swift; sourceTree = "<group>"; };
+		ACE27F5E22FED74F0007BCDA /* RateCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RateCollectionViewCell.xib; sourceTree = "<group>"; };
+		ACE27F612301880A0007BCDA /* CurrencyListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListModel.swift; sourceTree = "<group>"; };
 		ADCA248952271067CB05936D /* Pods_CurrencyConversionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CurrencyConversionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEBBD69E4CD77409C9E8A388 /* Pods-CurrencyConversion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurrencyConversion.release.xcconfig"; path = "Pods/Target Support Files/Pods-CurrencyConversion/Pods-CurrencyConversion.release.xcconfig"; sourceTree = "<group>"; };
 		B0894C75EC042924156CB2CF /* Pods-CurrencyConversionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurrencyConversionUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CurrencyConversionUITests/Pods-CurrencyConversionUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -138,7 +148,12 @@
 			isa = PBXGroup;
 			children = (
 				ACD3689922FE672E00E9055B /* AppDelegate.swift */,
+				ACE27F612301880A0007BCDA /* CurrencyListModel.swift */,
+				ACE27F5B22FEA4F00007BCDA /* InputCurrencyView.xib */,
+				ACE27F5522FE98810007BCDA /* InputCurrencyView.swift */,
 				ACD3689B22FE672E00E9055B /* ViewController.swift */,
+				ACE27F5D22FED74F0007BCDA /* RateCollectionViewCell.swift */,
+				ACE27F5E22FED74F0007BCDA /* RateCollectionViewCell.xib */,
 				ACD3689D22FE672E00E9055B /* Main.storyboard */,
 				ACD368A022FE673100E9055B /* Assets.xcassets */,
 				ACD368A222FE673100E9055B /* LaunchScreen.storyboard */,
@@ -278,8 +293,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACE27F5C22FEA4F00007BCDA /* InputCurrencyView.xib in Resources */,
 				ACD368A422FE673100E9055B /* LaunchScreen.storyboard in Resources */,
 				ACD368A122FE673100E9055B /* Assets.xcassets in Resources */,
+				ACE27F6022FED74F0007BCDA /* RateCollectionViewCell.xib in Resources */,
 				ACD3689F22FE672E00E9055B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,11 +454,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CurrencyConversion/Pods-CurrencyConversion-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -455,8 +476,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACE27F5622FE98810007BCDA /* InputCurrencyView.swift in Sources */,
 				ACD3689C22FE672E00E9055B /* ViewController.swift in Sources */,
+				ACE27F5F22FED74F0007BCDA /* RateCollectionViewCell.swift in Sources */,
 				ACD3689A22FE672E00E9055B /* AppDelegate.swift in Sources */,
+				ACE27F622301880B0007BCDA /* CurrencyListModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -632,7 +656,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CurrencyConversion/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = anxiu.dong.com.CurrencyConversion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -647,7 +674,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CurrencyConversion/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = anxiu.dong.com.CurrencyConversion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -663,7 +693,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CurrencyConversionTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = anxiu.dong.com.CurrencyConversionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -680,7 +714,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CurrencyConversionTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = anxiu.dong.com.CurrencyConversionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -696,7 +734,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CurrencyConversionUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = anxiu.dong.com.CurrencyConversionUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -712,7 +754,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CurrencyConversionUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = anxiu.dong.com.CurrencyConversionUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

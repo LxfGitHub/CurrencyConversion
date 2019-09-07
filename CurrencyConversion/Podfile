@@ -7,6 +7,8 @@ target 'CurrencyConversion' do
 
   # Pods for CurrencyConversion
   pod 'SVProgressHUD'
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
 
   target 'CurrencyConversionTests' do
     inherit! :search_paths
